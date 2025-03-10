@@ -1,0 +1,126 @@
+body { /* Task 5: Use Google fonts to style texts */
+    font-family: "Roboto", sans-serif; /* Task 1: Apply different font styles */
+    font-size: 16px;
+    background-image: url("blue_background_simple_267950.jpg"); /* Task 2: Set background images and colors */
+    background-size: cover; /* Cover the entire area */
+    
+}
+
+#grad1 {
+  height: 200px;
+background-image: linear-gradient(to right, black, darkkhaki); /* Task 6: Gradient effect */
+}
+
+h1 {
+    font-size: 3.5em; /* Heading size */
+    color: white;
+    text-align: center;
+    letter-spacing: 1px; /* Task 13: Space between letters */
+    line-height: 1.5; /* Line height for paragraphs */
+}
+
+.first {
+  background: rgba(0, 128, 0, 0.6);
+color: white;
+font-size: 40px;
+text-align: center;
+height: 100px;
+width: 80%;
+border-radius: 10px;
+}
+
+.second {
+  background-color: lightgrey;
+border: 15px solid green;
+padding: 50px;
+margin: 20px;
+width: 300px;
+}
+
+p { /* Task 4:change text color and align text */
+    line-height: 1.5; /* Task 13: Applying line heights */
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+color: #b3ffff;
+}
+
+.styled-button {
+    background-color: #4CAF50; /* Task 3: Add styled button with hover */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    height: 50px;
+Width: 100px;
+    border-radius: 5px; /* Task 11: Use border radius to create rounded buttons */
+    cursor: pointer;
+box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green; /* Task 8: Add box Shadow */
+    transition: background-color 0.3s; /* Transition */
+}
+
+.styled-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+transition: background-color 0.3s; /* Task 12: Implement css Transition on hover */
+}
+
+.join-button {
+    background-color: #FFFFFF; /* Task 3: Add styled button with hover */
+border-color: #2976d3;
+    color: #2976d3;
+    border-style: solid;
+border-width: 1px;
+    height: 36px;
+Width: 62px;
+    border-radius: 18px; /* Task 11: Use border radius to create rounded buttons */
+    cursor: pointer;
+margin-right: 15px;
+    transition: background-color 0.3s; /* Transition */
+}
+
+.semi-transparent {
+    background-color: rgb(179, 152, 0, 0.8); /* Task 9: Add a section with semi transparent background */
+    padding: 20px;
+    border-radius: 5px;
+border-style: dashed; /* Task 10: Style form element using different borders */
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+border-style: dashed;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.notification {
+    position: relative;
+    display: inline-block;
+}
+
+.badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 4px 8px;
+    font-size: 7px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Orderific Webpage Using CSS and HTML</title>
+	<!-- Task 1: Apply different font styles and sizes to a webpage -->
+	<!-- Task 2: Set background images and colors. -->
+	<style>
+:root {
+    --background-color: lightblue;
+    --text-color: darkblue;
+}
+
+@media (prefers-color-scheme: dark) {
+:root {
+--background-color: dark blue;
+--text-color: lightblue;
+}
+}
+
+	body {
+	  background-color: var(--main-bg-color);
+color: var(--main-text-color);
+	  font-family: "Roboto", sans-serif; /* Task 1: Apply different font styles */
+	  font-size: 16px;
+	  background-size: cover; /* Cover the entire area */
+background: linear-gradient(to right, red, white); /* Task 6: Gradient effect */
+	}
+
+	h1 {
+	  font-size: 2.5em; /* Heading size */
+	  color: blue;
+	  text-align: center;
+	}
+
+	p {
+	  line-height: 1.5; /* Line height */
+	  font-family: "Roboto", sans-serif;
+	  font-size: 20px;
+	}
+
+.styled-button {
+    background-color: #2F4F4F; /* DarkSlateGray */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transition */
+}
+
+.styled-button:hover {
+    background-color: #8FBC8F; /* Black on hover */
+}
+		</style>
+	</head>
+	<body>
+
+	<h1>Welcome to Orderific</h1>
+	<p>
+Have you heard? With amazing tech like our Smart Menu, restaurants are boosting their revenue by an impressive 37%! Imagine what this could mean for your place.<br>
+<a href="index.htm">Home</a>
+</p>
+<button class="styled-button">Click Me</button>
+	</body>
+</html>
