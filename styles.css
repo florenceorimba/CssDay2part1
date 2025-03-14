@@ -1,7 +1,7 @@
 body { /* Task 5: Use Google fonts to style texts */
     font-family: "Roboto", sans-serif; /* Task 1: Apply different font styles */
     font-size: 16px;
-    background-image: url("blue_background_simple_267950.jpg"); /* Task 2: Set background images and colors */
+    background-color: lightblue; /* Task 2: Light blue background */
     background-size: cover; /* Cover the entire area */
     
 }
@@ -30,55 +30,50 @@ border-radius: 10px;
 }
 
 .second {
-  background-color: lightgrey;
+  background-image: url("istockphoto-1616897621-640x640.jpg"); /* Task 2: Set background images and colors */
 border: 15px solid green;
 padding: 50px;
 margin: 20px;
 width: 300px;
+color: white;
 }
 
 p { /* Task 4:change text color and align text */
     line-height: 1.5; /* Task 13: Applying line heights */
     font-family: "Roboto", sans-serif;
     font-size: 20px;
-color: #b3ffff;
+color: white;
 }
 
-.styled-button {
-    background-color: #4CAF50; /* Task 3: Add styled button with hover */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    height: 50px;
-Width: 100px;
-    border-radius: 5px; /* Task 11: Use border radius to create rounded buttons */
-    cursor: pointer;
-box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green; /* Task 8: Add box Shadow */
-    transition: background-color 0.3s; /* Transition */
+.rounded-div { /* Task 11: Use border radius to create rounded buttons and div */
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid #007BFF; /* Border color */
+    background-color: white; /* Background color */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    text-align: center; /* Center text */
 }
 
-.styled-button:hover {
-    background-color: #45a049; /* Darker green on hover */
-transition: background-color 0.3s; /* Task 12: Implement css Transition on hover */
+.rounded-button { /* Task 11: Use border radius to create rounded buttons and div */
+    padding: 10px 20px; /* Button padding */
+    margin: 10px;
+    border: none; /* Remove default border */
+    background-color: #007BFF; /* Button background color */
+    color: white; /* Text color */
+    border-radius: 25px; /* Fully rounded button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Transition effect */
 }
 
-.join-button {
-    background-color: #FFFFFF; /* Task 3: Add styled button with hover */
-border-color: #2976d3;
-    color: #2976d3;
-    border-style: solid;
-border-width: 1px;
-    height: 36px;
-Width: 62px;
-    border-radius: 18px; /* Task 11: Use border radius to create rounded buttons */
-    cursor: pointer;
-margin-right: 15px;
-    transition: background-color 0.3s; /* Transition */
+.rounded-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
 }
 
 .semi-transparent {
     background-color: rgb(179, 152, 0, 0.8); /* Task 9: Add a section with semi transparent background */
-    padding: 20px;
+    padding: 5px;
     border-radius: 5px;
 border-style: dashed; /* Task 10: Style form element using different borders */
 }
@@ -110,17 +105,37 @@ input[type=submit]:hover {
 }
 
 .notification {
-    position: relative;
-    display: inline-block;
+    position: absolute; /* Position for the badge */
+    font-size: 40px; /* Size of the bell icon */
+top: 5px;
+right: 10px;
+
+}
+
+.notification-bell {
+    color: #007BFF; /* Color of the bell icon */
 }
 
 .badge {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background-color: red;
-    color: white;
-    border-radius: 50%;
-    padding: 4px 8px;
-    font-size: 7px;
+    position: absolute; /* Position the badge */
+    top: 5px; /* Adjust position */
+    right: 10px; /* Adjust position */
+    background-color: red; /* Badge color */
+    color: white; /* Badge text color */
+    border-radius: 50%; /* Make the badge circular */
+    padding: 5px 10px; /* Padding for the badge */
+    font-size: 14px; /* Badge text size */
+    font-weight: bold; /* Bold text */
+
+}
+
+
+:root { /* Task 7: Use CSS variables for theme colors */
+    --main-bg-color: lightblue;
+    --main-text-color: lightgrey;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
 }
