@@ -1,48 +1,135 @@
+a {
+    text-decoration: none;
+}
+
 body { /* Task 5: Use Google fonts to style texts */
     font-family: "Roboto", sans-serif; /* Task 1: Apply different font styles */
+    background-color: var(--main-bg-color); /* Task 2: Set background images and colors */
+    margin: 0;
+    padding: 0;
     font-size: 16px;
-    background-color: lightblue; /* Task 2: Light blue background */
-    background-size: cover; /* Cover the entire area */
-    
 }
 
-#grad1 {
-  height: 200px;
-background-image: linear-gradient(to right, black, darkkhaki); /* Task 6: Gradient effect */
+.button { /* Task 3: Create a styled buttons with hover effects */
+    padding: 10px 20px;
+    background-color: var(--main-bg-color);
+    color: #8B008B; /* Task 4:change text color and align text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Task 12: Implement CSS transitions on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Task 8: Use the box-shadow property to add depth to buttons */
+    margin: 10px;
+    font-size: 16px;
+    width: 300px;
+    text-align: center; /* Task 4:change text color and align text */
+    font-family: "Poppins", sans-serif;
 }
 
-h1 {
-    font-size: 3.5em; /* Heading size */
-    color: white;
-    text-align: center;
-    letter-spacing: 1px; /* Task 13: Space between letters */
-    line-height: 1.5; /* Line height for paragraphs */
-}
-
-.first {
-  background: rgba(0, 128, 0, 0.6);
-color: white;
-font-size: 40px;
-text-align: center;
-height: 100px;
-width: 80%;
-border-radius: 10px;
+.button:hover { /* Task 3: Create a styled buttons with hover effects */
+    background-color: #0056b3;
+    transform: scale(1.05);
 }
 
 .second {
-  background-image: url("istockphoto-1616897621-640x640.jpg"); /* Task 2: Set background images and colors */
-border: 15px solid green;
-padding: 50px;
-margin: 20px;
-width: 300px;
-color: white;
+    height: 300px;
+    background-image: linear-gradient(to right, CornflowerBlue, darkkhaki); /* Task 6: Implement a gradient background effect */
+    background-size: cover;
+    margin: 20px 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: center;
+    justify-content: center;
+    align-items: center; /* Task 4:change text color and align text */
+    padding: 30px;
+    border-radius: 10px;
 }
 
-p { /* Task 4:change text color and align text */
+h1 {
+    font-size: 2.5em; /* Task 1: Apply different font sizes */
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    letter-spacing: 1px; /* Task 13: Space between letters */
+    line-height: 1.5; /* Task 13: Line height for paragraphs */
+
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+
+#hd-sub { /* Task 7: Use CSS variables for theme colors */
+    font-size: 2em; /* Task 1: Apply different font sizes */
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-top: 0;
+    color: var(--secondary-color);
+    letter-spacing: 1px; /* Task 13: Space between letters */
+    line-height: 1.5; /* Task 13: Line height for paragraphs */
+}
+
+.container {
+    margin: 20px 10px;
+}
+
+.first { /* Task 2: Set background images and colors */
+    background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjk2MC1uaW5nLTMwLmpwZw.jpg"); /* Replace with your image */
+    background-size: cover;
+    margin: 20px 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: center;
+    justify-content: center;
+    align-items: center; /* Task 4:change text color and align text */
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.first1 {
+   padding-left: 1.5rem;
+   padding-right: 1.5rem;
+   margin-top: 0;
+}
+
+.first1-head {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   max-width: 700px;
+   text-align: center;
+   margin: auto auto 20px;
+}
+
+.first1-head .highlight-text {
+   letter-spacing: 1.6px; /* Task 13: Space between letters */
+   text-transform: uppercase;
+   margin-bottom: 10px;
+   color: rgb(255, 86, 52);
+   font-size: 16px;
+}
+
+.first1-head h3{
+   font-size: 28px;
+   line-height: 1.2em; /* Task 13: Line height for paragraphs */
+   color: rgb(18, 18, 18);
+   margin-top: 0;
+   margin-bottom: 12px;
+}
+
+.first1-head h3 span{
+   font-size: 28px;
+   color: rgb(255, 86, 54);
+   line-height: 1.2em;
+}
+
+.par2 {
+   padding: 0px 20px;
+}
+
+.par1 { /* Task 4:change text color and align text */
     line-height: 1.5; /* Task 13: Applying line heights */
-    font-family: "Roboto", sans-serif;
     font-size: 20px;
-color: white;
+    font-weight: 400;
 }
 
 .rounded-div { /* Task 11: Use border radius to create rounded buttons and div */
@@ -50,58 +137,73 @@ color: white;
     padding: 20px;
     margin: 20px;
     border: 2px solid #007BFF; /* Border color */
-    background-color: white; /* Background color */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
-    text-align: center; /* Center text */
+    background-color: white;
+    border-radius: 15px; /* Task 11: Use border radius to create rounded buttons and div */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Task 8: Use the box-shadow property to add depth to buttons */
+    text-align: center;
 }
 
-.rounded-button { /* Task 11: Use border radius to create rounded buttons and div */
-    padding: 10px 20px; /* Button padding */
-    margin: 10px;
-    border: none; /* Remove default border */
-    background-color: #007BFF; /* Button background color */
-    color: white; /* Text color */
-    border-radius: 25px; /* Fully rounded button */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s; /* Transition effect */
-}
-
-.rounded-button:hover {
+.rounded-div:hover {
     background-color: #0056b3; /* Darker shade on hover */
 }
 
 .semi-transparent {
-    background-color: rgb(179, 152, 0, 0.8); /* Task 9: Add a section with semi transparent background */
-    padding: 5px;
-    border-radius: 5px;
-border-style: dashed; /* Task 10: Style form element using different borders */
+    background-color: rgb(244, 255, 255, 0.8); /* Task 9: Add a section with semi transparent background */
+    padding: 30px;
+    border-radius: 15px;
+    border-style: dashed; /* Task 10: Style form element using different borders */
+
+    background-size: cover;
+    margin: 20px 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-input[type=text], select {
+input {
   width: 100%;
   padding: 12px 20px;
+  border-style: groove;/* Task 10: Style form element using different borders */
+  border-width: 10px;
+  border-color: coral;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+select {
+  width: 100%;
+  padding: 12px 20px;
+  border-style: dotted solid; /* Task 10: Style form element using different borders */
+  
+  border-color: coral;
+  margin: 8px 0;
+  display: inline-block;
+  
+  border-radius: 10px;
   box-sizing: border-box;
 }
 
 input[type=submit] {
   width: 100%;
-  background-color: #4CAF50;
+  background-color: cornflowerblue;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
-  border-radius: 4px;
+  border-radius: 10px;
   cursor: pointer;
 border-style: dashed;
+  transition: background-color 0.3s, transform 0.3s ease; /* Task 12: Implement CSS transitions on hover */
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #800000;
+  transform: scale(1.05);
 }
 
 .notification {
@@ -109,33 +211,41 @@ input[type=submit]:hover {
     font-size: 40px; /* Size of the bell icon */
 top: 5px;
 right: 10px;
-
+display: inline-block;
+margin-bottom: 40px;
+margin-left: 40px;
 }
 
 .notification-bell {
     color: #007BFF; /* Color of the bell icon */
+    cursor: pointer;
 }
 
 .badge {
-    position: absolute; /* Position the badge */
-    top: 5px; /* Adjust position */
-    right: 10px; /* Adjust position */
-    background-color: red; /* Badge color */
-    color: white; /* Badge text color */
-    border-radius: 50%; /* Make the badge circular */
-    padding: 5px 10px; /* Padding for the badge */
-    font-size: 14px; /* Badge text size */
-    font-weight: bold; /* Bold text */
+    position: absolute;
+    top: -5px; 
+    right: -10px; 
+    background-color: red; 
+    color: white; 
+    border-radius: 50%; 
+    padding: 5px 10px; 
+    font-size: 14px; 
+    font-weight: bold;
 
 }
 
 
 :root { /* Task 7: Use CSS variables for theme colors */
     --main-bg-color: lightblue;
-    --main-text-color: lightgrey;
+    --main-text-color: black;
+    --secondary-color: #007BFF;
 }
 
 body {
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
 }
