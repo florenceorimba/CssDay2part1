@@ -4,15 +4,13 @@ a {
 
 body { /* Task 5: Use Google fonts to style texts */
     font-family: "Roboto", sans-serif; /* Task 1: Apply different font styles */
-    background-color: var(--main-bg-color); /* Task 2: Set background images and colors */
-    margin: 0;
-    padding: 0;
+    background-color: var(--text-color); /* Task 2: Set background images and colors */
     font-size: 16px;
 }
 
 .button { /* Task 3: Create a styled buttons with hover effects */
     padding: 10px 20px;
-    background-color: var(--main-bg-color);
+    background-color: red;
     color: #8B008B; /* Task 4:change text color and align text */
     border: none;
     border-radius: 5px;
@@ -48,7 +46,7 @@ body { /* Task 5: Use Google fonts to style texts */
 h1 {
     font-size: 2.5em; /* Task 1: Apply different font sizes */
     font-weight: 700;
-    color: black;
+    color: white;
     text-align: center;
     letter-spacing: 1px; /* Task 13: Space between letters */
     line-height: 1.5; /* Task 13: Line height for paragraphs */
@@ -206,46 +204,91 @@ input[type=submit]:hover {
   transform: scale(1.05);
 }
 
-.notification {
-    position: absolute; /* Position for the badge */
-    font-size: 40px; /* Size of the bell icon */
-top: 5px;
-right: 10px;
-display: inline-block;
-margin-bottom: 40px;
-margin-left: 40px;
-}
-
-.notification-bell {
-    color: #007BFF; /* Color of the bell icon */
-    cursor: pointer;
-}
-
-.badge {
-    position: absolute;
-    top: -5px; 
-    right: -10px; 
-    background-color: red; 
-    color: white; 
-    border-radius: 50%; 
-    padding: 5px 10px; 
-    font-size: 14px; 
-    font-weight: bold;
-
-}
-
 
 :root { /* Task 7: Use CSS variables for theme colors */
     --main-bg-color: lightblue;
     --main-text-color: black;
     --secondary-color: #007BFF;
+    --primary-color: #4f46e5;     /* Indigo */
+    --secondary-color: #e0e7ff;   /* Light Indigo */
+    --text-color: #ffffff;
+    --bg-color: #1e1e2f;
+    --badge-color: #ef4444;       /* Red-500 */
 }
 
 body {
-    background-color: var(--main-bg-color);
     color: var(--main-text-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-*, ::after, ::before {
-    box-sizing: border-box;
+/* =================
+   HEADER & NOTIFICATION
+   ================= */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: var(--primary-color);
+  position: relative;
+}
+
+.notification-icon {
+  position: relative;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -8px;
+  background-color: var(--badge-color);
+  color: white;
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  border-radius: 9999px;
+}
+
+/* ================
+   HERO SECTION
+   ================ */
+.hero-section {
+  background-image: url('https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--bg-color); /* fallback */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  position: relative;
+}
+
+.hero-section .content {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 600px;
+}
+
+.hero-section h2 {
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 1.125rem;
+  color: #f3f4f6;
 }
